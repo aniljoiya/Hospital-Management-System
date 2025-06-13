@@ -1,0 +1,154 @@
+/* Styling for Appointment Form*/
+#appointmentBtn{
+   
+    background-color: #2ec8a6;
+    padding: 1.2rem 3rem;
+    font-size: 1.7rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+#appointmentBtn:hover{
+    padding: 1.5rem 2.5rem;
+}
+/* Main Layout */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+label{
+    font-size: 15px;
+}
+.formpart1,
+.formpart2 {
+    flex: 1;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Form Styling */
+#appointmentForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    z-index: 1000;
+    margin-top: 40px;
+}
+
+/* Style the input fields and textarea */
+input:focus, select:focus, textarea:focus {
+    border-color: #2ec8a6; /* Change border color to #2ec8a6 when focused */
+    outline: none; /* Remove the default focus outline */
+}
+
+/* Optional: Add transition effect for smooth color change */
+input, select, textarea {
+    transition: border-color 0.3s ease;
+}
+
+.popup-form .form-group {
+    margin-bottom: 15px;
+}
+
+.popup-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.popup-form .form-group input,
+.popup-form .form-group select,
+.popup-form .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #2ec8a6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #1e9178;
+}
+
+.popup-form .form-header {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the title */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.popup-form .close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    color: #000;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+textarea{
+    resize: none;
+}
+
+/*----------------------------------------------------------------------------*/
+/*Slots dynamically generated */
+#slotGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four bricks per row */
+    gap: 10px; /* Spacing between bricks */
+    margin-top: 10px;
+}
+
+.slot-brick {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.slot-brick:hover {
+    background-color: #2ec8a6;
+    color: white;
+}
+
+.slot-brick.selected {
+    background-color: #1e9178;
+    color: white;
+    border-color: #1e9178;
+}
+
+/*----------------------------------------------------*/

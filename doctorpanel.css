@@ -1,0 +1,352 @@
+/* Basic styles of navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Navbar */
+.profile .bx-plus {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.header {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.header input[type="text"] {
+    padding: 10px;
+    width: 600px;
+    border: 1px solid #121111;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.header .profile {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header .profile i {
+    font-size: 28px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.header .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Appointment Div CSS */
+.appointment-card {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Filter Section Styling */
+
+.filter-section{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.filter-section {
+    margin-top: 20px;
+}
+
+#filter-btn {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#filter-btn:hover {
+    background-color: #0056b3;
+}
+
+#filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#filter-options input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}
+
+#filter-options button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#filter-options button:hover {
+    background-color: #218838;
+}
+
+/* Dropdown Styling */
+#filter-options select {
+    padding: 8px 12px;          /* Add padding for a consistent look */
+    border: 1px solid #ddd;    /* Light border around the dropdown */
+    border-radius: 4px;        /* Rounded corners */
+    background-color: #fff;    /* White background for the dropdown */
+    width: 200px;              /* Fixed width for all dropdowns */
+    font-size: 14px;           /* Font size for readability */
+    color: #333;               /* Text color */
+    cursor: pointer;           /* Pointer cursor to indicate clickable */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for better focus */
+}
+
+/* Dropdown focus/hover effects */
+#filter-options select:focus {
+    border-color: #007bff;     /* Blue border on focus */
+    outline: none;             /* Remove default outline */
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+}
+
+#filter-options select:hover {
+    background-color: #f8f9fa; /* Slight background change on hover */
+}
+
+/* Placeholder text color for dropdowns */
+#filter-options select option[value=""] {
+    color: #aaa;               /* Light gray for placeholder text */
+}
+
+/* Responsive Design for Select Options */
+@media (max-width: 768px) {
+    #filter-options select {
+        width: 100%;           /* Full width for smaller screens */
+        margin-bottom: 10px;   /* Add spacing between fields */
+    }
+}
+
+
+
+/* General Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: table; /* Use table layout for alignment */
+}
+
+thead, tbody {
+    display: block; /* Separate header and body for independent scrolling */
+}
+
+thead {
+    width: 99.1%; /* Full width for alignment */
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #007BFF; /* Blue header background */
+    color: white;
+}
+
+tbody {
+    max-height: 450px; /*Height of the table */
+    overflow-y: auto; /* Scrollable body */
+    display: block;
+    width: 100%; /* Full width to match thead */
+}
+
+th, td {
+    word-wrap: break-word;
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    min-width: 120px; /* Fixed minimum width for consistent alignment */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+tr {
+    display: table; /* Ensure rows are treated as table rows */
+    width: 100%; /* Full width for alignment */
+    table-layout: fixed; /* Consistent column widths */
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row color */
+}
+
+
+/* Buttons Styling */
+.approve-btn, .decline-btn {
+    padding: 8px 12px;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition: background 0.3s ease;
+}
+
+.approve-btn {
+    background-color: #28a745; /* Green */
+}
+
+.approve-btn:hover {
+    background-color: #218838;
+}
+
+.decline-btn {
+    background-color: #dc3545; /* Red */
+}
+
+.decline-btn:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header input[type="text"] {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    table {
+        overflow-x: auto;
+    }
+
+    th, td {
+        font-size: 12px; /* Smaller font size for smaller screens */
+        padding: 8px;
+    }
+
+    .profile img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #filter-options input, #filter-options button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .approve-btn, .decline-btn {
+        padding: 6px 10px; /* Smaller buttons */
+        font-size: 12px;
+    }
+
+    th, td {
+        font-size: 10px;
+    }
+
+    #filter-options input, #filter-options button {
+        width: 100%;
+    }
+}
+
+
+/*******************************************************************/
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+}
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.modal-footer button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.modal-footer .print-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+.modal-footer .download-btn {
+    background-color: #2196F3;
+    color: white;
+}
+.close-btn {
+    color: red;
+    float: right;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+/***********************/
+
